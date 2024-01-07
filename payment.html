@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <form action="">
+        <h1 style="color:blue;">payment form</h1>
+        <p>required fields are allowed by *</p>
+        <h2>contact information</h2>
+        <p>Name:* <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>
+            male * <input type="radio" name="gender" id="male"required>
+            female<input type="radio" name="gender" id="female"required>
+        </p>
+      </fieldset>
+      <p>address <textarea name="address" id="address" cols="100" rows="8"></textarea></p>
+      <p> * Email <input type="Email" name="email" id="Email"required></p>+
+      <p> * Pincode <input type="number" name="Pincode" id="Pincode"required></p>
+      <h1>Payment information</h1>
+      <p>card type:
+          * <select name="card_type" id="card_type"required>
+            <option value="">--select a card type--</option>
+            <option value="Cradit card">Cradit card</option>
+            <option value="Debit card">Dabit card</option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+           </select>
+      </p>
+      <p>Card number * <input type="number" name="Card number" id="Card nhumber"required>
+      </p>
+      <p>
+        Expratation date * <input type="date" name="exp_date" id="axp_date"required>
+      </p>
+      <p>
+        cvv * <input type="password" name="cvv" id="cvv"required>
+      </p>
+      <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
